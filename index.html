@@ -8,10 +8,12 @@
             document.getElementById("datetime").innerHTML = dt.toLocaleString();
         </script>
     <div>
+        <button type="submit"  onClick="refreshPage()">Refresh</button>
         <script>
-            <input type="button" value="Refresh Page" onClick="refresh">
+            function refreshPage(){
+            window.location.reload();
+        } 
         </script>
-        <button>This Does Nothing</button>
         <style>
             button{
                 margin:auto;

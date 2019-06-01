@@ -3,14 +3,14 @@
     <title>Nothing</title>
     <h1 style="text-align:center;">Welcome to Nothing</h1>
     
-    <script>
-    for (;;) {
+
         <p style="text-align:center; color:slateblue;"><span id="datetime"></span></p>
-    }
-    </script>
+
         <script>
+             for (;;) {
             var dt = new Date();
             document.getElementById("datetime").innerHTML = dt.toLocaleString();
+             }
         </script>
     <div>
         <button type="submit"  onClick="refreshPage()">Refresh</button>
